@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.topBanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+    background-color: #0093FF;
+    padding: 15px;
+    margin: 150px auto 0;
+}
+
+.topBanner .icon, h2{
+    font-size: 35px;
+    color: white;
+}
+
+.topBanner .icon{
+    cursor: pointer;
+}
+
+.inputs{
+    display: flex;
+    font-size: 50px;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    /*border: 1px solid red;*/
+}
+
+.inputfields{
+    display: flex;
+    width: 1275px;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    /*border: 1px solid red;*/
+    margin: 15px auto 0;
+}
+
+input{
+    width: 170px;
+    height: 50px;
+}
+
+.descriptionText{
+    font-size: 50px;
+    margin-left: 570px;
+    margin-top: 15px;
+}
+
+.description input{
+    display: flex;
+    width: 770px;
+    margin: 10px auto 0;
+}
+
+.addButton{
+    display: flex;
+    margin: 15px auto 0;
+    width: 150px;
+    background-color: #0093FF;
+    outline: none;
+    border: none;
+    justify-content: center;
+    font-size: 25px;
+    box-shadow: 1px 15px 25px -5px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+
