@@ -1,6 +1,7 @@
 
 
 const addButton = document.querySelector('.addButton')
+const crossButton = document.querySelector('.cross');
 let count = 0;
 let checkCount = "0";
 let crossCount = "0";
@@ -28,12 +29,19 @@ addButton.addEventListener('click', function() {
 
     const titleText = document.createElement('h2');
     titleText.setAttribute('class','title');
+    
+    if(titleTextValue.length > 16){
+        console.log("more than 16 characters");
+        titleTextValue = titleTextValue.match(new RegExp(".{0,16}", "g")).join('<br />');
+    }
+    
+    
     titleText.textContent = titleTextValue;
     document.getElementById(count).append(titleText);
 
     //Create a span element. add icon class for styling then add it to the current to do item.
     const checkSpan = document.createElement('span');
-    checkSpan.setAttribute('class', 'icon');
+    checkSpan.setAttribute('class', 'icon' + ' check');
     checkSpan.setAttribute('id', "iconCount" + iconCount);
     document.getElementById(count).append(checkSpan);
     
@@ -50,7 +58,7 @@ addButton.addEventListener('click', function() {
 
 
     const crossSpan = document.createElement('span');
-    crossSpan.setAttribute('class', 'icon');
+    crossSpan.setAttribute('class', 'icon' + ' cross');
     crossSpan.setAttribute('id', "crossIcon" + iconCount);
     document.getElementById(count).append(crossSpan);
 
@@ -63,6 +71,13 @@ addButton.addEventListener('click', function() {
     checkCount++;
     crossCount++;
 
+
+})
+
+
+crossButton.addEventListener('click', function () {
+   const parentItem = crossButton.parentNode;
+   console.log(parentItem);
 
 })
 
