@@ -5,7 +5,55 @@
 }
 
 body{
-    background-color: azure;
+    background-color: pink;
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 150px;
+    width: 500px;
+    background-color: #10101d;
+    border-radius: 7px;
+}
+
+.container h2{
+    margin: 20px 10px;
+    color: white;
+}
+
+
+
+.searchbar button{
+    float: right;
+    margin-right: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+}
+
+input{
+    background-color: #10101d;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    /*border-bottom: 1px solid white;*/
+    
+}
+
+.line{
+    display: block;
+    margin-left: 10px;
+    border-bottom: 1px solid white;
+    width: 400px;
+    height: 4px;
+    
 }
 
 
