@@ -37,8 +37,13 @@ body{
     outline: none;
 }
 
+.searchbar button:hover{
+    background-color: red;
+}
+
 input{
     background-color: #10101d;
+    color: white;
     border-radius: 0px;
     border: none;
     outline: none;
@@ -64,6 +69,7 @@ input{
     display: flex;
     margin-top: 20px;
     margin-left: 10px;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: space-between;
     
