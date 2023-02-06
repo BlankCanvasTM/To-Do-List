@@ -1,34 +1,28 @@
-const addButton = document.querySelector('.addButton');
+function newtask(){
 
-addButton.addEventListener('click', function() {
-    console.log("icp")
+    //Create a new item element
     
     let taskInputText = document.getElementById("taskInput");
     
     if(taskInputText.value.length == 0)
-        alert("Enter a Task!")
+        alert("Enter a Task!");
     else{
-        document.querySelector('.container').innerHTML += `
+        document.querySelector('.container').innerHTML += (`
         <div class="item">
         <h2>${taskInputText.value}</h2>
-        <span class="icon"><i class="fa-solid fa-trash-can"></i></span>
+        <span class="icon delete"><i class="fa-solid fa-trash-can"></i></span>
         </div
         
         
-        `
+        `);
+    };
+    return;
+}
 
-        /* const item = `
-        <div class="item">
-        <h2>${taskInputText.value}</h2>
-        <span class="icon"><i class="fa-solid fa-trash-can"></i></span>
-        </div
-        
-        
-        `
-        document.body.innerHTML = item;//document.getElementById('containerBox').append(item); */
+//get every element that has the delete class. for every element with the delete class check if the onclick event has been fired. If so delete the parent element removing the task
+var current_tasks = document.querySelectorAll('.delete');
+    for(var i=0; i<current_tasks.length; i++){
+        current_tasks[i].onclick = function(){
+            this.parentNode.remove();
+        }
     }
-
-
-
-
-});
