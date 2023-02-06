@@ -14,7 +14,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 150px;
+    min-height: 175px;
     width: 500px;
     background-color: #10101d;
     border-radius: 7px;
@@ -56,6 +56,32 @@ input{
     
 }
 
+.item{
+    background-color: #191933;
+    height: 35px;
+    border-radius: 4px;
+    width: 470px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: space-between;
+    
+    /*display: block;
+    margin-left: 10px;*/
+    
+}
+
+.item h2{
+    font-size: 18px;
+
+}
+
+.icon{
+    color: red;
+    padding-right: 15px;
+    cursor: pointer;
+}
 
 
 
