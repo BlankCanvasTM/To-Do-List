@@ -1,3 +1,5 @@
+let count = 0;
+
 function newtask(){
 
     //Create a new item element
@@ -8,21 +10,21 @@ function newtask(){
         alert("Enter a Task!");
     else{
         document.querySelector('.container').innerHTML += (`
-        <div class="item">
+        <div class="item ${count}">
         <h2>${taskInputText.value}</h2>
-        <span class="icon delete"><i class="fa-solid fa-trash-can"></i></span>
+        <span onclick="deleteTask(this)" class="icon delete"><i class="fa-solid fa-trash-can"></i></span>
         </div
         
         
         `);
+        count++;
     };
     return;
 }
 
-//get every element that has the delete class. for every element with the delete class check if the onclick event has been fired. If so delete the parent element removing the task
-var current_tasks = document.querySelectorAll('.delete');
-    for(var i=0; i<current_tasks.length; i++){
-        current_tasks[i].onclick = function(){
-            this.parentNode.remove();
-        }
-    };
+function deleteTask(child){
+    child.parentNode.remove();
+    
+}
+
+
