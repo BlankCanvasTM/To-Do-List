@@ -72,15 +72,13 @@ input{
     margin-bottom: 15px;
     align-items: center;
     justify-content: space-between;
+    
+}
 
-
+.item:last-of-type{
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-    
-    /*display: block;
-    margin-left: 10px;*/
-    
 }
 
 .item h2{
