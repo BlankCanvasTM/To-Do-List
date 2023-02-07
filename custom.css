@@ -72,6 +72,11 @@ input{
     margin-bottom: 15px;
     align-items: center;
     justify-content: space-between;
+
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
     
     /*display: block;
     margin-left: 10px;*/
@@ -89,6 +94,16 @@ input{
     cursor: pointer;
 }
 
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
 
 
 

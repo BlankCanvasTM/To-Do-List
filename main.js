@@ -25,4 +25,4 @@ var current_tasks = document.querySelectorAll('.delete');
         current_tasks[i].onclick = function(){
             this.parentNode.remove();
         }
-    }
+    };
